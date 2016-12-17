@@ -1,0 +1,85 @@
+% bibliograpy keyword database
+%
+%
+% The \cite command functions as follows:
+%   \citet{key} ==>>                Jones et al. (1990)
+%   \citet*{key} ==>>               Jones, Baker, and Smith (1990)
+%   \citep{key} ==>>                (Jones et al., 1990)
+%   \citep*{key} ==>>               (Jones, Baker, and Smith, 1990)
+%   \citep[chap. 2]{key} ==>>       (Jones et al., 1990, chap. 2)
+%   \citep[e.g.][]{key} ==>>        (e.g. Jones et al., 1990)
+%   \citep[e.g.][p. 32]{key} ==>>   (e.g. Jones et al., p. 32)
+%   \citeauthor{key} ==>>           Jones et al.
+%   \citeauthor*{key} ==>>          Jones, Baker, and Smith
+%   \citeyear{key} ==>>             1990
+%
+%   \citet*{burles97a,burles98b} =>  Burles & Tytler (1997,1998)
+%   \citep{epps98,bigelow98,sheinis00}
+%   => (Epps & Miller 1998 ; Bigelo & Nelson 1998 ; Sheinis et al. 2000)
+
+% This archive.bib rule:
+%
+% 1) Alphabetical Order from to to bottom by the First Author Name
+%    Note A-Z is tagged by "%#A", "%#B" etc
+% 2) Chronological Order among the same first Author
+% 3) keyword is the first author's full last name w/o abbreviation + year + alphabet
+
+%  Example :
+%  Perlmutter, Saul  1999 => perlmutter99a
+%  van Dokkum, P.G.  2001 => vandokkum01a
+%  Vangioni-Flam, E. 1994 => vangioniflam94a
+
+%#A
+
+@ARTICLE{stone08a,
+   author = {{Stone}, J.~M. and {Gardiner}, T.~A. and {Teuben}, P. and {Hawley}, J.~F. and 
+	{Simon}, J.~B.},
+    title = "{Athena: A New Code for Astrophysical MHD}",
+  journal = {\apjs},
+archivePrefix = "arXiv",
+   eprint = {0804.0402},
+ keywords = {hydrodynamics, MHD, methods: numerical },
+     year = 2008,
+    month = sep,
+   volume = 178,
+      eid = {137-177},
+    pages = {137-177},
+      doi = {10.1086/588755},
+   adsurl = {http://adsabs.harvard.edu/abs/2008ApJS..178..137S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{koldoba16a,
+   author = {{Koldoba}, A.~V. and {Ustyugova}, G.~V. and {Lii}, P.~S. and 
+	{Comins}, M.~L. and {Dyda}, S. and {Romanova}, M.~M. and {Lovelace}, R.~V.~E.
+	},
+    title = "{Numerical MHD codes for modeling astrophysical flows}",
+  journal = {\na},
+archivePrefix = "arXiv",
+   eprint = {1508.00003},
+ keywords = {Numerical methods, Codes, Magnetohydrodynamics},
+     year = 2016,
+    month = may,
+   volume = 45,
+    pages = {60-76},
+      doi = {10.1016/j.newast.2015.10.011},
+   adsurl = {http://adsabs.harvard.edu/abs/2016NewA...45...60K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{jansson12a,
+   author = {{Jansson}, R. and {Farrar}, G.~R.},
+    title = "{A New Model of the Galactic Magnetic Field}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1204.3662},
+ keywords = {Galaxy: general, Galaxy: structure, ISM: magnetic fields},
+     year = 2012,
+    month = sep,
+   volume = 757,
+      eid = {14},
+    pages = {14},
+      doi = {10.1088/0004-637X/757/1/14},
+   adsurl = {http://adsabs.harvard.edu/abs/2012ApJ...757...14J},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
